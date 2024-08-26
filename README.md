@@ -137,7 +137,6 @@ del "%APPDATA%\Code\User\README.md" "%APPDATA%\Code\User\LICENSE"
 | `N`                   | Creates a new file in the file explorer when it is focused, and no input field is active. |
 | `R`                   | Renames the selected file in the file explorer when it is focused, and no input field is active. |
 | `Shift + N`           | Creates a new folder in the file explorer when it is focused. |
-| `Shift + N`           | Opens a new window when the file explorer is not focused. |
 | `D`                   | Deletes the selected file in the file explorer when it is focused, and no input field is active. |
 
 ## Extra
