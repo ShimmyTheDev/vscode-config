@@ -1,81 +1,104 @@
 [
     // NAVIGATION
     {
-      "key": "ctrl+p",
-      "command": "workbench.action.quickOpen"
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen"
     },
     {
-      "key": "ctrl+shift+a",
-      "command": "workbench.action.terminal.focusNext",
-      "when": "terminalFocus"
+        "key": "ctrl+shift+a",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
     },
     {
-      "key": "ctrl+shift+b",
-      "command": "workbench.action.terminal.focusPrevious",
-      "when": "terminalFocus"
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
     },
     {
-      "key": "ctrl+shift+j",
-      "command": "workbench.action.togglePanel"
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.focusActiveEditorGroup"
     },
     {
-      "key": "ctrl+shift+n",
-      "command": "workbench.action.terminal.new",
-      "when": "terminalFocus"
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
     },
     {
-      "key": "ctrl+shift+w",
-      "command": "workbench.action.terminal.kill",
-      "when": "terminalFocus"
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "!terminalFocus && !terminalIsOpen"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "terminalIsOpen && !terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
     },
     // FILE TREE
     {
-      "key": "ctrl+e",
-      "command": "workbench.view.explorer",
-      "when": "!sidebarVisible"
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "!sidebarVisible"
     },
     {
-      "key": "ctrl+e",
-      "command": "workbench.files.action.focusFilesExplorer",
-      "when": "sidebarVisible && !explorerViewletVisible"
+        "key": "ctrl+e",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "sidebarVisible && !explorerViewletVisible"
     },
     {
-      "key": "ctrl+e",
-      "command": "workbench.files.action.focusFilesExplorer",
-      "when": "sidebarVisible && explorerViewletVisible && !explorerViewletFocus"
+        "key": "ctrl+e",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "sidebarVisible && explorerViewletVisible && !explorerViewletFocus"
     },
     {
-      "key": "ctrl+e",
-      "command": "workbench.action.closeSidebar",
-      "when": "explorerViewletFocus"
+        "key": "ctrl+e",
+        "command": "workbench.action.closeSidebar",
+        "when": "explorerViewletFocus"
     },
     {
-      "key": "n",
-      "command": "explorer.newFile",
-      "when": "filesExplorerFocus && !inputFocus"
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus && !editorTextFocus"
     },
     {
-      "command": "renameFile",
-      "key": "r",
-      "when": "filesExplorerFocus && !inputFocus"
+        "command": "renameFile",
+        "key": "r",
+        "when": "filesExplorerFocus && !inputFocus"
     },
     {
-      "key": "shift+n",
-      "command": "explorer.newFolder",
-      "when": "explorerViewletFocus"
+        "key": "shift+n",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus && !editorTextFocus"
     },
     {
-      "command": "deleteFile",
-      "key": "d",
-      "when": "filesExplorerFocus && !inputFocus"
+        "command": "deleteFile",
+        "key": "d",
+        "when": "filesExplorerFocus && !inputFocus"
     },
     // EXTRA
     {
-      "key": "ctrl+shift+5",
-      "command": "editor.emmet.action.matchTag"
+        "key": "ctrl+shift+1",
+        "command": "editor.emmet.action.matchTag"
     },
     {
-      "key": "ctrl+z",
-      "command": "workbench.action.toggleZenMode"
+        "key": "ctrl+z",
+        "command": "workbench.action.toggleZenMode"
     }
-  ]
+]
